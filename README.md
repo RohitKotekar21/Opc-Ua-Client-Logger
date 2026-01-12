@@ -1,4 +1,9 @@
-## Prerequisites
+# Objective
+Design and implement an OPC UA Client that connects to a simulated OPC UA server, reads
+dummy tags at regular intervals, and logs the data into hourly spreadsheets.
+
+
+## Prerequisites:
 Before running the client, ensure the following software is installed and configured:
 
 * Python 3.x: The core programming language used.
@@ -10,7 +15,7 @@ Before running the client, ensure the following software is installed and config
 * Matrikon OPC UA Explorer: Used for manual tag verification and server browsing.
 
 
-## Installation & Setup
+## Installation & Setup:
 Install Python Library: Open your terminal and run the following command:
 
 ```pip install opcua```
@@ -31,7 +36,7 @@ Install Python Library: Open your terminal and run the following command:
 
 * Ensure the tags are updating their values in real-time.
 
-## Configuration
+## Configuration:
 * The source code is pre-configured with the following settings:
 
     * Endpoint: ```opc.tcp://LAPTOP-LA2AESIK:48010```
@@ -40,7 +45,7 @@ Install Python Library: Open your terminal and run the following command:
 
 * Target Tags: 10 dynamic tags from the Demo.Dynamic.Scalar branch, including Double, Boolean, Int32, and String types.
 
-## Execution
+## Execution:
 * Navigate to the folder containing the ```opc_logger.py``` script.
 
 * Run the script via the command line:
@@ -48,9 +53,10 @@ Install Python Library: Open your terminal and run the following command:
 
 * The console will display real-time logs, and CSV files will be generated automatically in the same directory.
 
-### Troubleshooting
+### Troubleshooting:
 * Connection Error: Verify that the server is running and the computer name in the endpoint is correct.
 
 * Access Denied: Ensure the CSV output file is not open in Excel, as Excel locks the file and prevents the script from writing data.
 
 * NaN/Error Values: Check the Matrikon Explorer to ensure the specific Node ID exists and is currently "Good."
+
