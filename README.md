@@ -26,7 +26,7 @@ Install Python Library: Open your terminal and run the following command:
 
 * Ensure the server status is set to "Running".
 
-* Note the endpoint: ```opc.tcp://LAPTOP-LA2AESIK:48010```
+* Note the endpoint (Host Name) : ```opc.tcp://LAPTOP-LA2AESIK:48010```
 
 ### Verify Tags:
 
@@ -59,4 +59,5 @@ Install Python Library: Open your terminal and run the following command:
 * Access Denied: Ensure the CSV output file is not open in Excel, as Excel locks the file and prevents the script from writing data.
 
 * NaN/Error Values: Check the Matrikon Explorer to ensure the specific Node ID exists and is currently "Good."
+
 
